@@ -1,0 +1,9 @@
+debug
+release
+minirt
+compile_commands.json
+.cache/clangd/index
+.submodules
+gmon.out
+minirt.supp
+.project.gf

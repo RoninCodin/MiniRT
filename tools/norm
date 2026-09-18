@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+norminette src include libft/libft.h libft/src ft_linalg >  >(grep -B1 -E '^Error|^Notice')

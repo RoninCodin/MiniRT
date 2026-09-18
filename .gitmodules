@@ -1,0 +1,10 @@
+[submodule "libft"]
+	path = libft
+	branch = inc_math
+	url = https://github.com/MFelida/libft.git
+[submodule "MLX42"]
+	path = MLX42
+	url = git@github.com:codam-coding-college/MLX42.git
+[submodule "ft_linalg"]
+	path = ft_linalg
+	url = https://github.com/MFelida/ft_linalg.git
