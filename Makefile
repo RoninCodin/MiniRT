@@ -107,6 +107,7 @@ clean-$(1):
 
 .PHONY: fclean-$(1)
 fclean-$(1):
+	@rm -f $(NAME)
 	@rm -rf .submodules
 	rm -rf $(1)
 	@echo "$(1) build fully cleaned"
@@ -216,12 +217,12 @@ help:
 # --- libft (different targets per mode) ---
 release/lib/libft.a: | .submodules
 	@mkdir -p $(dir $@)
-	@$(MAKE) -C libft re
+	@$(MAKE) -C libft re CFLAGS="-Wall -Wextra -Werror -Wno-prio-ctor-dtor -I."
 	@cp -f libft/libft.a $@
 
 debug/lib/libft.a: | .submodules
 	@mkdir -p $(dir $@)
-	@$(MAKE) -C libft clean debug
+	@$(MAKE) -C libft clean debug CFLAGS="-Wall -Wextra -Werror -Wno-prio-ctor-dtor -I."
 	@cp -f libft/libft.a $@
 
 # --- libft_linalg (depends on libft) ---

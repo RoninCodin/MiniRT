@@ -1,5 +1,3 @@
-
-
 # miniRT
 
 ## Description
@@ -21,7 +19,7 @@ You can also use standard Makefile rules to clean up build artifacts:
 * `make re` - Recompiles the entire project from scratch.
 
 ### Installation & Dependencies
-This project uses the **MLX42** graphics library. Ensure you have the required dependencies for MLX42 installed on your system (e.g., `glfw`). The MLX42 submodule should be initialized and built automatically by the Makefile, but if needed, you can initialize submodules via:
+This project uses the **MLX42** graphics library. Ensure you have the required dependencies for MLX42 installed on your system (e.g., `glfw` and CMake). The MLX42 submodule should be initialized and built automatically by the Makefile, but if needed, you can initialize submodules via:
 ```bash
 git submodule update --init --recursive
 ```
